@@ -1,6 +1,9 @@
 import Mathlib
 open BigOperators Real Nat Topology
 
+set_option maxRecDepth 100000
+set_option maxHeartbeats 0
+
 theorem numbertheory_2pownm1prime_nprime
   (n : ℕ)
   (h₀ : 0 < n)

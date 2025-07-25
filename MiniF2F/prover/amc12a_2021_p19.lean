@@ -1,6 +1,9 @@
 import Mathlib
 open BigOperators Real Nat Topology
 
+set_option maxRecDepth 100000
+set_option maxHeartbeats 0
+
 theorem amc12a_2021_p19
   (S : Finset ℝ)
   (h₀ : ∀ (x : ℝ), x ∈ S ↔ 0 ≤ x ∧ x ≤ Real.pi ∧ Real.sin (Real.pi / 2 * Real.cos x) = Real.cos (Real.pi / 2 * Real.sin x)) :

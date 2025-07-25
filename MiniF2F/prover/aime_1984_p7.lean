@@ -1,6 +1,9 @@
 import Mathlib
 open BigOperators Real Nat Topology
 
+set_option maxRecDepth 100000
+set_option maxHeartbeats 0
+
 theorem aime_1984_p7
   (f : ℤ → ℤ)
   (h₀ : ∀ n, 1000 ≤ n → f n = n - 3)
