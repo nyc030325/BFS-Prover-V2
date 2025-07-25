@@ -1,9 +1,10 @@
 import Mathlib
 open BigOperators Real Nat Topology
 
-theorem mathd_algebra_176
-  (x : ℝ) :
-  (x + 1)^2 * x = x^3 + 2 * x^2 + x := by
+theorem mathd_algebra_17
+  (a : ℝ)
+  (h₀ : Real.sqrt (4 + Real.sqrt (16 + 16 * a)) + Real.sqrt (1 + Real.sqrt (1 + a)) = 6) :
+  a = 8 := by
 
   have helper : √(4 + √(16 + 16 * a)) = 6 - √(1 + √(1 + a))
   apply Eq.symm <;> try linarith [Real.sq_sqrt (by positivity : (0 : ℝ) ≤ 4 + √(16 + 16 * a)), Real.sq_sqrt (by positivity : (0 : ℝ) ≤ 1 + √(1 + a))]

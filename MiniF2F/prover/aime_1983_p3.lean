@@ -1,6 +1,9 @@
 import Mathlib
 open BigOperators Real Nat Topology
 
+set_option maxRecDepth 100000
+set_option maxHeartbeats 0
+
 theorem aime_1983_p3
   (f : ℝ → ℝ)
   (h₀ : ∀ x, f x = (x^2 + (18 * x +  30) - 2 * Real.sqrt (x^2 + (18 * x + 45))))

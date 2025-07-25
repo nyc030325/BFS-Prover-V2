@@ -1,12 +1,12 @@
 import Mathlib
 open BigOperators Real Nat Topology
 
-theorem mathd_numbertheory_559
-  (x y : ℕ)
-  (h₀ : x % 3 = 2)
-  (h₁ : y % 5 = 4)
-  (h₂ : x % 10 = y % 10) :
-  14 ≤ x := by
+theorem mathd_numbertheory_5
+  (n : ℕ)
+  (h₀ : 10 ≤ n)
+  (h₁ : ∃ x, x^2 = n)
+  (h₂ : ∃ t, t^3 = n) :
+  64 ≤ n := by
 
   obtain ⟨⟨a,ha⟩ ,⟨b, hb⟩⟩ := h₁, h₂
   by_contra can
